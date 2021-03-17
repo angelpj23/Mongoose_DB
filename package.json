@@ -1,0 +1,27 @@
+{
+  "name": "mongoosedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.12.0",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelpj23/Mongoose_DB.git"
+  },
+  "author": "Angel Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelpj23/Mongoose_DB/issues"
+  },
+  "homepage": "https://github.com/angelpj23/Mongoose_DB#readme"
+}
