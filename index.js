@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
-const connectionString =
-  "mongodb+srv://angelpj23:angel1123@cluster0.oz4e1.mongodb.net/db_test?retryWrites=true&w=majority";
-mongoose.connect(connectionString, {
+require("dotenv").config();
+
+mongoose.connect(process.env.ACCESS, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-// const Cars = mongoose.model("Cars", { model: String });
+const Cars = mongoose.model("Cars", { _id: String, model: String });
 
-// const Honda = new Cars({ model: "Honda Civic" });
-// Honda.save().then(() => console.log("Saved 😁"));
+const Honda = new Cars({ _id: "24", model: "Kia K5" });
+Honda.save().then(() => console.log("Saved 😁"));
 
-// Cars.find().then(console.log);
+Cars.find().then(console.log);
 
 // Cars.find({ where: { name: "" } });
