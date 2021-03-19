@@ -1,3 +1,3 @@
 module.exports = {
-  mvc: require("./mvc"),
+  Exmvc: require("./mvc.model"),
 };
